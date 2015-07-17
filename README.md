@@ -91,5 +91,5 @@ Polar Geospatial Center
 University of Minnesota  
 
 **GitHub Repository**  
-*University of Minnesota Enterprise Private Repository*   
-https://github.umn.edu/herri147/pgc-ags-query-example.git
+*Polar Geospatial Center*   
+https://github.com/PolarGeospatialCenter/pgc-ags-fs-query-example.git
