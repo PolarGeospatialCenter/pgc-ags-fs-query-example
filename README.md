@@ -31,7 +31,7 @@ params = urllib.urlencode({
 ```
 
 ### Account Registration
-Requires an **approved account** with the Polar Geospatial Center for ArcGIS Services and requires proper **role assignment** for secure services. Accounts can be requested at the URL below, but require approval from the Polar Geospatial Center (please include your U.S. federal research award number). If you already have an account and need access to secure services, please email (Brad Herried)[herri147@umn.edu].
+Requires an **approved account** with the Polar Geospatial Center for ArcGIS Services and requires proper **role assignment** for secure services. Accounts can be requested at the URL below, but require approval from the Polar Geospatial Center (please include your U.S. federal research award number). If you already have an account and need access to secure services, please email [Brad Herried](mailto:herri147@umn.edu).
 
 Account Registration: https://users.pgc.umn.edu/request
 
