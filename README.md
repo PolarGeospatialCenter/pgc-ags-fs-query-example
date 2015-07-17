@@ -6,15 +6,15 @@
 [![Latest Release](https://img.shields.io/badge/released-2015--07--17-brightgreen.svg?style=flat-square)](https://github.com/PolarGeospatialCenter/pgc-ags-fs-query-example/releases/tag/v.1.0)
 
 ### Description
-Stand-alone script for performing an http(s) call to ArcGIS Server REST API.  
-Includes methods for establishing http(s) connection and getting ArcGIS token.  
+Stand-alone script for performing an HTTP(S) call to ArcGIS Server REST API.  
+Includes methods for establishing HTTP(S) connection and getting ArcGIS Server token.  
 
-Example method for performing a query to a Feature Service:
+Example method included for performing a query to a Feature Service:
 ```
 featureServiceQueryExample()
 ```
 
-Example results from query included as `query-example-result.json` for reference:
+Example results from query in this repo as `query-example-result.json` for reference, based on this query:
 ```python
 params = urllib.urlencode({
     "where"         : "objectid<150",
@@ -38,9 +38,7 @@ Account Registration: https://users.pgc.umn.edu/request
     - During script execution, you will be prompted for your username and password
 
 ### Methods
-
-
-##### featureServiceQueryExample(*token*)
+##### :large_blue_diamond: featureServiceQueryExample(*token*)
 Queries an ArcGIS Feature Service via an http(s) call.
 > **Request Parameter Docs**  
 > https://overlord.pgc.umn.edu/arcgis/sdk/rest/index.html#//02ss0000002r000000  
@@ -53,8 +51,7 @@ Queries an ArcGIS Feature Service via an http(s) call.
 > **Returns**  
 > Deserialized JSON object to Python data structure  
 
-
-##### getToken(*conn*,*username*,*password*)
+##### :large_blue_diamond: getToken(*conn*,*username*,*password*)
 Requests an authorization token from the ArcGIS Server API by username and password.
 > **Request Parameters**  
 > `"client"` set to "requestip"  
@@ -67,8 +64,7 @@ Requests an authorization token from the ArcGIS Server API by username and passw
 > **Returns**  
 > `result["token"]` token string from the result JSON object  
 
-
-##### createHttpConnection(*serverName*,*serverPort*,*useSSL*)
+##### :large_blue_diamond: createHttpConnection(*serverName*,*serverPort*,*useSSL*)
 Initiates an HTTP or HTTPS connection to the specified host server.
 > **Parameters**  
 > `serverName` ArcGIS Server domain (e.g. `overlord.pgc.umn.edu`)  
@@ -77,8 +73,7 @@ Initiates an HTTP or HTTPS connection to the specified host server.
 > **Returns**  
 > `httpConn` Python HTTP(S) connection object  
 
-
-##### assertJsonSuccess(*data*)
+##### :large_blue_diamond: assertJsonSuccess(*data*)
 Basic check for errors in the return JSON response data.
 > **Parameters**  
 > `data` JSON response data from HTTP(S) request  
