@@ -26,13 +26,16 @@ params = urllib.urlencode({
 })
 ```
 
-### Requirements
-Requires an **approved account** with the Polar Geospatial Center for ArcGIS Services and requires proper **role assignment** for secure services. Email [Brad Herried](mailto:herri147@umn.edu) for instructions for how to create an account and request the proper role for secure services.
+### Account Registration
+Requires an **approved account** with the Polar Geospatial Center for ArcGIS Services and requires proper **role assignment** for secure services. Accounts can be requested at the URL below, but require approval from the Polar Geospatial Center (please include your U.S. federal research award number). If you already have an account and need access to secure services, please email (Brad Herried)[herri147@umn.edu].
 
-### Usage 
+Account Registration: https://users.pgc.umn.edu/request
+
+### Requirements and Usage 
 - Requires Python 2.6+ 
 - Incompatible with Python 3.0 (httplib, urllib) 
-- **Command line** `python path/to/script/pgc-ags-query-example.py` 
+- **Command line** `python path/to/script/pgc-ags-query-example.py`
+    - During script execution, you will be prompted for your username and password
 
 ### Methods
 
