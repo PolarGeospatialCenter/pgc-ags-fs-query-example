@@ -43,7 +43,7 @@ Account Registration: https://users.pgc.umn.edu/request
 
 ### Methods
 ##### :large_blue_diamond: featureServiceQueryExample(*token*)
-Queries an ArcGIS Feature Service via an http(s) call.
+Queries an ArcGIS Feature Service layer via an HTTP(S) call.
 > **Request Parameter Docs**  
 > http://discovery.pgc.umn.edu/arcgis/sdk/rest/index.html?fsquery.html   
 > **Browser-based Test**  
@@ -73,7 +73,7 @@ Initiates an HTTP or HTTPS connection to the specified host server.
 > **Parameters**  
 > `serverName` ArcGIS Server domain (e.g. `overlord.pgc.umn.edu`)  
 > `serverPort` ArcGIS Server port for access. Defaults to `None` but some ArcGIS Servers use `6080``6443``80`  
-> `useSSL` connect using a secure (https) connection `True|False`  
+> `useSSL` connect using a secure (HTTPS) connection `True|False`  
 > **Returns**  
 > `httpConn` Python HTTP(S) connection object  
 
