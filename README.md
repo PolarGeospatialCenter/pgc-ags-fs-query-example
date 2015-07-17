@@ -9,12 +9,16 @@
 Stand-alone script for performing an HTTP(S) call to ArcGIS Server REST API.  
 Includes methods for establishing HTTP(S) connection and getting ArcGIS Server token.  
 
+Default PGC ArcGIS Server connection and service:  
+- Server: [discovery.pgc.umn.edu](http://discovery.pgc.umn.edu/arcgis/rest/services) (10.1)
+- Feature Service: [DigitalGlobe Stereo Index (pairnames)](http://discovery.pgc.umn.edu/arcgis/rest/services/vendor/index_dg_comm_opt_stereo_strip_all_all_pairname/FeatureServer) (requires authentication)
+
 Example method included for performing a query to a Feature Service:
 ```
 featureServiceQueryExample()
 ```
 
-Example results from query in this repo as `query-example-result.json` for reference, based on this query:
+Example results from query in this repo as [query-example-result.json](pgc-ags-fs-query-example/query-example-result.json) for reference, based on this query:
 ```python
 params = urllib.urlencode({
     "where"         : "objectid<150",
