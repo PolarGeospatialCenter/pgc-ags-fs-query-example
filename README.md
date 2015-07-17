@@ -45,9 +45,9 @@ Account Registration: https://users.pgc.umn.edu/request
 ##### :large_blue_diamond: featureServiceQueryExample(*token*)
 Queries an ArcGIS Feature Service via an http(s) call.
 > **Request Parameter Docs**  
-> https://overlord.pgc.umn.edu/arcgis/sdk/rest/index.html#//02ss0000002r000000  
+> http://discovery.pgc.umn.edu/arcgis/sdk/rest/index.html?fsquery.html   
 > **Browser-based Test**  
-> https://overlord.pgc.umn.edu/arcgis/rest/services/vendor/index_dg_comm_all_stereo_strip_all_all_pairname/FeatureServer/0/query
+> http://discovery.pgc.umn.edu/arcgis/rest/services/vendor/index_dg_comm_opt_stereo_strip_all_all_pairname/FeatureServer/0/query  
 > 
 > **Parameters**  
 > `conn` http(s) connection object  
