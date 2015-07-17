@@ -18,7 +18,7 @@ Example method included for performing a query to a Feature Service:
 featureServiceQueryExample()
 ```
 
-Example results from query in this repo as [query-example-result.json](pgc-ags-fs-query-example/query-example-result.json) for reference, based on this query:
+Example results from query in this repo as [query-example-result.json](query-example-result.json) for reference, based on this query:
 ```python
 params = urllib.urlencode({
     "where"         : "objectid<150",
