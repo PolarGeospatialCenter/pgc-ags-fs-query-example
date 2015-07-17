@@ -2,8 +2,8 @@
 # Feature Service Query Example
 *pgc-ags-query-example.py*
 
-![Latest Release](https://img.shields.io/badge/version-1.0-blue.svg)
-![Release Date](https://img.shields.io/badge/released-2015--07--17-brightgreen.svg)
+[![Latest Release](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/PolarGeospatialCenter/pgc-ags-fs-query-example/releases/tag/v.1.0)
+[![Latest Release](https://img.shields.io/badge/released-2015--07--17-brightgreen.svg)](https://github.com/PolarGeospatialCenter/pgc-ags-fs-query-example/releases/tag/v.1.0)
 
 ### Description
 Stand-alone script for performing an http(s) call to ArcGIS Server REST API.  
