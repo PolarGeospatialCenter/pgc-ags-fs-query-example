@@ -11,7 +11,7 @@ Includes methods for establishing HTTP(S) connection and getting ArcGIS Server t
 
 Default PGC ArcGIS Server connection and service:  
 - Server: [discovery.pgc.umn.edu](http://discovery.pgc.umn.edu/arcgis/rest/services) (10.1)
-- Feature Service: [DigitalGlobe Stereo Index (pairnames)](http://discovery.pgc.umn.edu/arcgis/rest/services/vendor/index_dg_comm_opt_stereo_strip_all_all_pairname/FeatureServer) (requires authentication)
+- Feature Service: [DigitalGlobe Stereo Index (pairnames)](http://discovery.pgc.umn.edu/arcgis/rest/services/vendor/pgc_dg_stereo_catalogids_with_pairname/FeatureServer) (requires authentication)
 
 Example method included for performing a query to a Feature Service:
 ```
@@ -21,7 +21,7 @@ featureServiceQueryExample()
 Example results from query in this repo as [query-example-result.json](query-example-result.json) for reference, based on this query:
 ```python
 params = urllib.urlencode({
-    "where"         : "objectid<150",
+    "where"         : "catalogid='1010010000177C00'",
     "outFields"     : "objectid,catalogid,acqdate,pairname",
     "orderByFields" : "objectid ASC",
     "returnGeometry": False,
@@ -35,9 +35,9 @@ Requires an **approved account** with the Polar Geospatial Center for ArcGIS Ser
 
 Account Registration: https://users.pgc.umn.edu/request
 
-### Requirements and Usage 
-- Requires Python 2.6+ 
-- Incompatible with Python 3.0 (httplib, urllib) 
+### Requirements and Usage
+- Requires Python 2.6+
+- Incompatible with Python 3.0 (httplib, urllib)
 - **Command line** `python path/to/script/pgc-ags-query-example.py`
     - During script execution, you will be prompted for your username and password
 
@@ -47,8 +47,8 @@ Queries an ArcGIS Feature Service layer via an HTTP(S) call.
 > **Request Parameter Docs**  
 > http://discovery.pgc.umn.edu/arcgis/sdk/rest/index.html?fsquery.html   
 > **Browser-based Test**  
-> http://discovery.pgc.umn.edu/arcgis/rest/services/vendor/index_dg_comm_opt_stereo_strip_all_all_pairname/FeatureServer/0/query  
-> 
+> http://discovery.pgc.umn.edu/arcgis/rest/services/vendor/pgc_dg_stereo_catalogids_with_pairname/FeatureServer/0/query
+>
 > **Parameters**  
 > `conn` http(s) connection object  
 > `token` valid ArcGIS Server token string   
@@ -60,7 +60,7 @@ Requests an authorization token from the ArcGIS Server API by username and passw
 > **Request Parameters**  
 > `"client"` set to "requestip"  
 > `"f"` set to "json"  
-> 
+>
 > **Parameters**  
 > `conn` http(s) connection object  
 > `username` registered PGC ArcGIS Server username  
